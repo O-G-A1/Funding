@@ -377,16 +377,19 @@ body{
     .landingsubmission p{
         font-size: 1.3rem;
         font-weight: 500;
-        padding-left: 45px;
-        padding-right: 45px;
+        text-align: left;
+        hyphens: auto;
+        padding-left: 40px;
+        padding-right: 40px;
         padding-bottom: 30px;
     }
+    
     #greet{
         margin-top: 15px;
-        padding-left: 45px;
+        padding-left: 40px;
         padding-bottom: 5px;
         font-size: 1.4rem;
-        color: rgba(0, 0, 0, 0.562);
+        color: rgba(0, 0, 0, 0.671);
         font-weight: 600;
     }
    

@@ -9,6 +9,6 @@ function greetuser(){
     const firstName=localStorage.getItem("Firstname");
     document.getElementById("greet").textContent=`Congratulations, ${firstName}!`;
     const email=localStorage.getItem("emailaddress");
-    document.getElementById("emailaddress").textContent+=" " + email;
+    document.getElementById("emailaddress").textContent+=" " + "(" + email + ")";
 }
 
