@@ -27,9 +27,9 @@
     </div>
 
 
-    <form action="" class="formmerger">
+    <form action="submission.html" class="formmerger" method="post" onsubmit="savedata()">
         <p class="step1of3">
-            <span>Step 1 of 3:</span>Tell us about you and your Funding Needs
+            <span>Step 1:</span>Tell us about you and your Funding Needs
         </p>
         <div class="form1">
                     <label for="FirstName">First Name:</label>
@@ -40,6 +40,9 @@
         
                     <label for="LastName">Last Name:</label>
                     <input type="text" name="Lastname" id="Lastname" required>
+
+                    <label for="Phone">Phone Number:</label>
+                    <input type="number" name="Phonenumber" id="Phone Number" required>
         
                     <label for="Streetaddress">Street Address:</label>
                     <input type="text" name="Streetaddress" id="Streetaddress" required>
@@ -50,8 +53,6 @@
                     <label for="City">City:</label>
                     <input type="text" name="City" id="City" required>
                     
-                    <label for="Phone">Phone Number:</label>
-                    <input type="number" name="Phonenumber" id="Phone Number" required>
         
                     <label for="State">State:</label>
                     <select name="States" id="States">
@@ -133,8 +134,13 @@
                 <option value="Permanent Resident">Permanent Resident</option>
                 <option value="Not Sure">Not Sure</option>
             </select>
+
             <label for="SSN">Social Security Number:</label>
             <input type="number" name="SSN" id="SSN">
+
+            <label for="DOB">Date of birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
             <label for="Employment-Status">Employment Status:</label>
             <select name="Employment-Status" id="EmploymentStatus">
                 <option value="Select" selected>Select...</option>
@@ -148,7 +154,9 @@
             </select>
             <label for="Income">Monthly Income:</label>
             <input type="text" name="monthlyincome" id="monthlyincome">
-            <label for="Image">Upload your <span>State ID/Driver's License:</span></label>
+            <label for="Image">Upload your <span>State ID/Driver's License(Front):</span></label>
+            <input type="file" name="id" id="id" accept="Image/*">
+            <label for="Image">Upload your <span>State ID/Driver's License(Back):</span></label>
             <input type="file" name="id" id="id" accept="Image/*">
         </div>
 
@@ -191,19 +199,26 @@
                 <option value="money">$80,000 - $90,000</option>
                 <option value="money">$90,000 - $100,000</option>
             </select>
+
             <label for="description">Briefly tell us how you intend to make good use of the money.</label>
             <textarea name="description" id="description" rows="8" cols="50"></textarea>
+
             <label for="timemoneyneeded">How soon do you need the money?</label>
             <textarea name="timemoneyneeded" id="timemoneyneeded" rows="3" cols="50"></textarea>
+
+            <label for="Referral">Referral (How did you come acrosss this life-changing information?):</label>
+            <input type="text" name="Referral" id="Referral">
+
             <label for="email">Email address:</label>
             <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+
             <div class="checkbox">
                 <input type="checkbox" id="agreement">
                 <label for="agreement">By clicking, I agree to the terms of this site and I have every requirement to apply for this funding application and I promise to make good use of the funds when approved.</label>
             </div>
 
 
-            <button type="submit" class="submit">Submit Application</button>
+            <button type="submit" class="submit" id="submitbtn">Submit Application</button>
             <div class="secure">
                 <img src="./assets/images/secure ssl.avif" alt="secure">
                 <img src="./assets/images/security2.png" alt="secure">
@@ -215,5 +230,6 @@
     </form>
 
     <script src="https://kit.fontawesome.com/2f8df1a2ea.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>s
 </body>
 </html>

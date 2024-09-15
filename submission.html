@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="icon" href="./assets/images/Grant-icon.jpeg">
 </head>
-<body>
+<body onload="greetuser()">
     <nav class="grantnav">
         <i class="fa-regular fa-star"></i>
         <h3 class="usa">USA</h3>
@@ -21,15 +21,19 @@
             <a href="./grantform.html" style="background-color: rgba(224, 10, 10, 0.692); color: white;">APPLY</a>
         </div>
     </nav>
+
     <div class="formintro">
         <h4>USA Funding Application Submission</h4>
         <h3>Registration successful</h3>
     </div>
-    <div class="landingsubmission">'
-        <p>Your funding application has been submitted. <span style="color:  rgb(228, 63, 63);">You will receive a follow-up email immediately.</span> Sometimes, emails might find their way into your spam folder due to strict filters or inbox settings that prioritize new senders differently. It’s a good idea to check there, as my messages are designed to provide valuable updates and insights that could be beneficial to you.</p>
+
+    <div class="landingsubmission">
+        <h4 id="greet"></h4>
+        <p>Your funding application has been submitted. <span style="color:  rgb(228, 63, 63);">You will receive a follow-up email <span id="emailaddress">on</span>immediately.</span> Sometimes, emails might find their way into your spam folder due to strict filters or inbox settings that prioritize new senders differently. It’s a good idea to check there, as my messages are designed to provide valuable updates and insights that could be beneficial to you.</p>
 
         <p>For further enquiries, you can contact us through:</p>
     </div>
-    
+    <script src="https://kit.fontawesome.com/2f8df1a2ea.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

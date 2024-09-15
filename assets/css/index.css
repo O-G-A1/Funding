@@ -201,7 +201,10 @@ body{
         font-size: 1rem;
         margin-bottom: 20px;
     }
+    textarea{
+        margin-bottom: 20px;
 
+    }
 
     /* content 3  */
     div.content3{
@@ -374,8 +377,18 @@ body{
     .landingsubmission p{
         font-size: 1.3rem;
         font-weight: 500;
-        text-align: left;
-        padding: 20px;
+        text-align: justify;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 30px;
+    }
+    #greet{
+        margin-top: 15px;
+        padding-left: 45px;
+        padding-bottom: 5px;
+        font-size: 1.4rem;
+        color: rgba(0, 0, 0, 0.562);
+        font-weight: 600;
     }
    
 
